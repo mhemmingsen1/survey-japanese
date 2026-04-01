@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+  var params = new URLSearchParams(window.location.search);
+  
+  var pair1 = Math.floor(Math.random() * 2) + 1;
+  var pair2 = Math.floor(Math.random() * 2) + 1;
+  var pair3 = Math.floor(Math.random() * 2) + 1;
+  var pair4 = Math.floor(Math.random() * 2) + 1;
+  var pair5 = Math.floor(Math.random() * 2) + 1;
+  var pair6 = Math.floor(Math.random() * 2) + 1;
+  var pair7 = Math.floor(Math.random() * 2) + 1;
+  
+  var url = 'https://hemminm.limesurvey.net/637662?lang=ja&newtest=Y' +
+    '&pair1=' + pair1 +
+    '&pair2=' + pair2 +
+    '&pair3=' + pair3 +
+    '&pair4=' + pair4 +
+    '&pair5=' + pair5 +
+    '&pair6=' + pair6 +
+    '&pair7=' + pair7 +
+    '&PROLIFIC_PID=' + (params.get('PROLIFIC_PID') || '') +
+    '&STUDY_ID=' + (params.get('STUDY_ID') || '') +
+    '&SESSION_ID=' + (params.get('SESSION_ID') || '');
+  
+  window.location.href = url;
+</script>
+</head>
+<body>Loading...</body>
+</html>
